@@ -1,0 +1,34 @@
+/* userinput menu */
+#mainmenu{
+	display: block;
+	width: 50%;
+	height: 80%;
+	background-color: white;
+	position: absolute;
+	top: 0px;
+	left: 25%;
+	z-index: 101;
+	transition: top ease-out 0s, opacity linear .25s;
+	-webkit-transition: top ease-out 0s, opacity linear .25s;
+	opacity:  0;
+	top:  -100%;
+}
+#mainmenu.show{
+	opacity: 1;
+	top: 10%;
+	overflow: scroll;
+}
+#mainmenu .close{
+	display: block;
+	height: 30px;
+	width: 30px;
+	background-color: green;	
+}
+@keyframes showmenu{
+	0%   {top:-100%; opacity: 0}
+	100% {top: 10%; opacity: 1;}	
+}
+@keyframes hidemenu{
+	0%   {top: 10%; opacity: 1;}	
+	100% {top:-100%; opacity: 0}
+}
