@@ -1,7 +1,10 @@
-# BrowserKeyBinds
+## BrowserKeyBinds
 a crude to add configurable keybindings on the browser
 
-```
+
+### Markdown
+
+```javascript
 import { UserInput } from "./userinput.js"
 
 var userInput = new UserInput("mainmenu")
@@ -23,3 +26,7 @@ userInput.keyDown("A", myalert, {
 
 console.log(userInput);
 ```
+
+### Support or Contact
+
+Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
